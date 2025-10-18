@@ -1,0 +1,31 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+/* اسکرول‌بار محو */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+:root {
+  --color-bg-dark: #0d0f16; /* پس‌زمینه اصلی */
+  --color-surface-dark: #131722; /* پس‌زمینه کارت‌ها */
+  --color-border-dark: #2a2e38; /* حاشیه‌ها */
+  --color-gold: #f5b841; /* طلایی اصلی */
+  --color-gold-light: #f8c978; /* طلایی روشن */
+  --color-text-light: #e6e6e6;
+  --color-text-muted: #9ca3af;
+}
