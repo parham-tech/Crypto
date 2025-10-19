@@ -159,7 +159,13 @@ export function CryptoChart() {
       )}
 
       {/* Chart */}
-      <div className="relative h-[350px] overflow-hidden">
+<div
+  className="relative h-[350px] w-full overflow-hidden rounded-xl"
+  style={{
+    backgroundColor: isDark ? "#111827" : "#ffffff", // ← رنگ دقیق تم بک‌گراند
+    transition: "background-color 1s ease-in-out",
+  }}
+>
         <AnimatePresence mode="wait">
           {loading && !history ? (
             <motion.div
