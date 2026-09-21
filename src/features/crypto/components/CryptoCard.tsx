@@ -63,17 +63,23 @@ export function CryptoCard({ coin }: Props) {
     : "text-gray-500 dark:text-gray-400";
 
   const percentColor =
-    coin.price_change_percentage_24h >= 0
-      ? isSelected
+    coin.price_change_percentage_24h !== null && coin.price_change_percentage_24h !== undefined
+      ? coin.price_change_percentage_24h >= 0
+        ? isSelected
+          ? isDark
+            ? "text-green-800"
+            : "text-green-200"
+          : "text-green-500"
+        : isSelected
         ? isDark
-          ? "text-green-800"
-          : "text-green-200"
-        : "text-green-500"
+          ? "text-red-800"
+          : "text-red-200"
+        : "text-red-500"
       : isSelected
       ? isDark
-        ? "text-red-800"
-        : "text-red-200"
-      : "text-red-500";
+        ? "text-gray-800"
+        : "text-blue-100"
+      : "text-gray-500 dark:text-gray-400";
 
   return (
     <motion.div
@@ -119,7 +125,9 @@ export function CryptoCard({ coin }: Props) {
             ${coin.current_price.toLocaleString()}
           </p>
           <p className={`text-xs font-medium ${percentColor}`}>
-            {coin.price_change_percentage_24h.toFixed(2)}%
+            {coin.price_change_percentage_24h !== null && coin.price_change_percentage_24h !== undefined
+              ? `${coin.price_change_percentage_24h.toFixed(2)}%`
+              : "N/A"}
           </p>
         </div>
       </div>
