@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "/og-image-crypto.png",
+        url: "/crypto.png",
         width: 1200,
         height: 630,
         alt: "Crypto Tracker Dashboard",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     description:
       "Track live cryptocurrency prices and interactive charts for Bitcoin, Ethereum, and more.",
 
-    images: ["/og-image-crypto.png"],
+    images: ["/crypto.png"],
   },
 
   robots: {
