@@ -16,6 +16,10 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    "https://crypto-project-for-portfolio.vercel.app"
+  ),
+
   title: "Crypto Tracker",
   description: "Serverless crypto dashboard built with Next.js 14",
 };

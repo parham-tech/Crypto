@@ -5,7 +5,7 @@ import CryptoPage from "@/features/crypto/CryptoPage";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    "https://crypto-tracker-parham.vercel.app"
+    "https://crypto-project-for-portfolio.vercel.app/",
   ),
 
   title: "Crypto Tracker | Real-time Cryptocurrency Prices",
@@ -83,7 +83,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "Crypto Tracker",
-  url: "https://crypto-tracker-parham.vercel.app/",
+  url: "https://crypto-project-for-portfolio.vercel.app/",
   description:
     "Track live cryptocurrency prices and interactive charts for Bitcoin, Ethereum, and more.",
   applicationCategory: "FinanceApplication",
