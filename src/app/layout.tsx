@@ -1,7 +1,6 @@
 // src/app/layout.tsx
 import type { Metadata } from "next";
 import { Inter, Roboto_Mono } from "next/font/google";
-import "@/styles/globals.css";
 import { ThemeProvider } from "@/context/ThemeContext";
 
 const inter = Inter({
