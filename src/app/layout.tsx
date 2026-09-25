@@ -1,12 +1,12 @@
-// src/app/layout.tsx
 import type { Metadata } from "next";
 import { Inter, Roboto_Mono } from "next/font/google";
+import "@/styles/globals.css";
 import { ThemeProvider } from "@/context/ThemeContext";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
-  display: "swap", // ⚡️ بهبود عملکرد فونت
+  display: "swap",
 });
 
 const robotoMono = Roboto_Mono({
@@ -28,9 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${robotoMono.variable} 
-         <body className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-[1500ms] ease-in-out">
-`}
+        className={`${inter.variable} ${robotoMono.variable} bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-[1500ms] ease-in-out`}
       >
         <ThemeProvider>{children}</ThemeProvider>
       </body>
