@@ -20,7 +20,7 @@ export async function GET() {
     const res = await fetch(url, {
       headers: {
         accept: "application/json",
-        "x-cg-pro-api-key": apiKey,
+        "x-cg-demo-api-key": apiKey,
         "User-Agent": "CryptoTrackerApp/1.0",
       },
       next: { revalidate },
