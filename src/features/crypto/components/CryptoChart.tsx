@@ -122,7 +122,7 @@ export function CryptoChart() {
       style={{ backgroundColor: palette.bg }}
     >
       {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-2">
+      <div className="flex flex-col md:flex-row flex-wrap md:items-center md:justify-between mb-4 gap-2">
         <div className="flex items-center gap-3">
           <h2 className="text-lg font-semibold capitalize" style={{ color: palette.text }}>
             {selectedCoin} – {range === "max" ? "All Time" : `Last ${range} Days`}
